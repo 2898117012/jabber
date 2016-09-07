@@ -8,8 +8,7 @@
 # Site settings
 title: jabber
 email: 2898117012@qq.com
-description: > # this means to ignore newlines until "baseurl:"
-  说明
+description: jabber的个人博客，分享技术文章、
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://jabber.oppophp.com" # the base hostname & protocol for your site
 twitter_username: jabber
