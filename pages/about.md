@@ -20,7 +20,7 @@ permalink: /about/
 ## 联系
 
 * GitHub：[@2898117012](https://github.com/2898117012)
-
+* QQ : [2898117012](http://user.qzone.qq.com/2898117012)
 ## Skill Keywords
 
 #### Software Engineer Keywords
