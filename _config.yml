@@ -7,7 +7,7 @@ date_format: "ordinal"
 title: Jabber
 subtitle: "全汝形，抱汝生，勿使汝思虑营营！"
 description: "Jabber的个人博客"
-keywords: 码志, jabber, blog, 2898117012
+keywords: php,laravel,thinkphp,vagrant, jabber, blog, 2898117012
 favicon: /favicon.ico
 timezone: Asia/Shanghai
 encoding: "utf-8"
@@ -90,7 +90,7 @@ github_username: 2898117012
 #      Comments    #
 # ---------------- #
 # support provider: disqus, duoshuo
-comments_provider: disqus
+comments_provider: duoshuo
 # !!!重要!!! 请修改下面两个用户名为你自己申请的
 # !!!Important!!! Please modify usernames below to yours
 # duoshuo_username: mazhuang
@@ -107,6 +107,6 @@ lazy_load_duoshuo: false
 # ---------------- #
 #      Datas       #
 # ---------------- #
-skill_software_keywords: [Java, C++, Python, Design Patterns]
-skill_mobile_app_keywords: [Android, Reverse Engineering]
+skill_software_keywords: [PHP,Lavel,Java,NODEJS,Ruby,Python,Lua,Golang,,C++, Python, Design Patterns,UML]
+skill_mobile_app_keywords: [Android,IOS,HTML5, Reverse Engineering]
 skill_windows_keywords: [Win32 SDK, DuiLib, WTL, COM, WinDbg]
