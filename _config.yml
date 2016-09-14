@@ -107,6 +107,6 @@ lazy_load_duoshuo: false
 # ---------------- #
 #      Datas       #
 # ---------------- #
-skill_software_keywords: [PHP,Lavel,Java,NODEJS,Ruby,Python,Lua,Golang,,C++, Python, Design Patterns,UML]
+skill_software_keywords: [PHP,Lavel,Java,NODEJS,Ruby,Python,Lua,Golang,C++, Python, Design Patterns,UML]
 skill_mobile_app_keywords: [Android,IOS,HTML5, Reverse Engineering]
 skill_windows_keywords: [Win32 SDK, DuiLib, WTL, COM, WinDbg]
