@@ -1,5 +1,6 @@
 ---
 layout: post
+comments: true
 title: UML基础知识
 categories: [uml]
 description: UML基础知识
