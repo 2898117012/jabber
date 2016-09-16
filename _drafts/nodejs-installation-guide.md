@@ -1,6 +1,6 @@
 ---
 layout: post
-comments: false
+comments: true
 title: Nodejs安装指南
 categories: [nodejs]
 description: nodejs安装指南
