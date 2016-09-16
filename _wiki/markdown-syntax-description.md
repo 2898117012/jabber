@@ -1,5 +1,6 @@
 ---
 layout: wiki
+comments: false
 title: MarkDown语法说明
 categories: [markdown]
 description: MarkDown语法说明
