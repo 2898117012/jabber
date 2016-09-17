@@ -101,8 +101,8 @@ lazy_load_duoshuo: false
 # ---------------- #
 #    Analytics     #
 # ---------------- #
-google:
-    analytics_id: UA-84290351-1
+#google:
+#    analytics_id: UA-84290351-1
 
 # ---------------- #
 #      Datas       #
