@@ -110,3 +110,5 @@ lazy_load_duoshuo: false
 skill_software_keywords: [PHP,Lavel,Java,Nodejs,Ruby,Python,Lua,Golang,C++, Python, Design Patterns,UML]
 skill_mobile_app_keywords: [Android,IOS,HTML5, Reverse Engineering]
 skill_windows_keywords: [Win32 SDK, DuiLib, WTL, COM, WinDbg]
+public_repositories: []
+contribute_repos: ['2898117012/c-lang-demo']
