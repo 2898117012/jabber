@@ -10,4 +10,4 @@ permalink: /links/
 
 > God made relatives. Thank God we can choose our friends.
 
-* [码志](http://mazhuang.org){:target="_blank"}
+* [剥洋葱](http://liujinyuan.com.cn/){:target="_blank"}
