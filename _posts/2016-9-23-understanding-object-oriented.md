@@ -1,6 +1,6 @@
 ---
 layout: post
-comments: false
+comments: true
 title: 理解面向对象
 categories: [uml, oop]
 description: 理解面向对象
