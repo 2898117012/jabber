@@ -7,7 +7,7 @@ date_format: "ordinal"
 title: Jabber
 subtitle: "全汝形，抱汝生，勿使汝思虑营营！"
 description: "Jabber的个人博客"
-keywords: php,laravel,thinkphp,vagrant,jabber,c,java,docker,nodejs,python,ruby,golang,lua,webpack,gulp,grunt,reactjs,vue.js,angularjs,jquery
+keywords: php,laravel,thinkphp,vagrant,jabber,c,java,docker,nodejs,python,ruby,golang,lua,webpack,gulp,grunt,reactjs,vuejs,angularjs,jquery
 favicon: /favicon.ico
 timezone: Asia/Shanghai
 encoding: "utf-8"
