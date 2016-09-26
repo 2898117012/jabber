@@ -17,8 +17,8 @@ side_bar_repo_limit: 5
 #      Author      #
 # ---------------- #
 author: Jabber
-organization: Dmax, Inc.
-organization_url: https://www.dmax.hk
+organization: Trendsoft, Inc.
+organization_url: https://www.trendsoft.org
 location: Wuhan, China
 email: 2898117012@qq.com
 
@@ -110,3 +110,5 @@ lazy_load_duoshuo: false
 skill_software_keywords: [PHP,Lavel,Java,Nodejs,Ruby,Python,Lua,Golang,C++, Python, Design Patterns,UML]
 skill_mobile_app_keywords: [Android,IOS,HTML5, Reverse Engineering]
 skill_windows_keywords: [Win32 SDK, DuiLib, WTL, COM, WinDbg]
+public_repositories: []
+contribute_repos: ['2898117012/c-lang-demo']
