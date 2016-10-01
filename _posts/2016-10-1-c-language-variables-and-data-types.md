@@ -28,7 +28,7 @@ keywords: c, c++,c语言,c语言入门
 #include <stdio.h>
 void show();
 int age = 0;
-int main(void) { 
+int main(void) {
 	show();
 	printf("my age:%d",age);
 	return 0;
@@ -45,7 +45,7 @@ void show(){
 在函数内申请的变量叫局部变量，局部变量只能在当前函数中使用。
 ```c
 #include <stdio.h>
-int main(void) { 
+int main(void) {
 	int age = 10
 	printf("my age:%d",age);
 	return 0;
@@ -59,7 +59,7 @@ int main(void) {
 申明一个变量，由数据类型和变量名组成。
 ```c
 //无初始值
-int age; 
+int age;
 double money;
 //设置初始值
 int myage = 20;
@@ -88,11 +88,10 @@ int main(void) {
  * PI:3.141593
  * AGE:20
  ***/
-``` 
+```
 
-## 数据类型
+## C语言数据类型
 <table>
-	<caption>C语言数据类型</caption>
 	<thead>
 		<tr>
 			<th>类型名称</th>
@@ -153,21 +152,162 @@ int main(void) {
 	</tbody>
 </table>
 
-## 输入和输出
+## 常用转义符
+<table>
+	<thead>
+		<tr>
+			<th>转义符</th>
+			<th>说明</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>\a</td>
+			<td>输出警告</td>
+		</tr>
+		<tr>
+			<td>\b</td>
+			<td>输出退格</td>
+		</tr>
+		<tr>
+			<td>\f</td>
+			<td>输出换页</td>
+		</tr>
+		<tr>
+			<td>\n</td>
+			<td>输出换行</td>
+		</tr>
+		<tr>
+			<td>\r</td>
+			<td>输出回车</td>
+		</tr>
+		<tr>
+			<td>\t</td>
+			<td>输出水平制表</td>
+		</tr>
+		<tr>
+			<td>\v</td>
+			<td>输出垂直制表</td>
+		</tr>
+		<tr>
+			<td>\'</td>
+			<td>输出单引号</td>
+		</tr>
+	</tbody>
+</table>
 
-## 转义符
+### 使用示例
+```c
+#include <stdio.h>
+int main(void) { 
+	printf("Hello World!\nHello World!");
+	return 0;
+}
+/***
+ * 输出
+ * Hello World!
+ * Hello World!
+ ***/
+```
 
-## 常用转换字符串列表
+## 常用格式化字符串列表
+<table>
+	<thead>
+		<tr>
+			<th>格式字符</th>
+			<th>说明</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>%d</td>
+			<td>输入 / 输出为整型</td>
+		</tr>
+		<tr>
+			<td>%ld</td>
+			<td>输入 / 输出长整型</td>
+		</tr>
+		<tr>
+			<td>%c</td>
+			<td>输入 / 输出字符</td>
+		</tr>
+		<tr>
+			<td>%s</td>
+			<td>输入 / 输出字符串</td>
+		</tr>
+		<tr>
+			<td>%f</td>
+			<td>输入 / 输出单精度浮点型</td>
+		</tr>
+		<tr>
+			<td>%lf</td>
+			<td>输入 / 输出双精度浮点型</td>
+		</tr>
+	</tbody>
+</table>
+
+### 使用示例
+```c
+#include <stdio.h>
+int main(void) { 
+    int age;
+    printf("Please input you age:");
+    scanf("%d",&age);
+    printf("Are you age is %d.",age);
+    return 0;
+}
+```
 
 ## 算术运算符
+<table>
+	<thead>
+		<tr>
+			<th>运算符</th>
+			<th>说明</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>+</td>
+			<td>加</td>
+		</tr>
+		<tr>
+			<td>-</td>
+			<td>减</td>
+		</tr>
+		<tr>
+			<td>*</td>
+			<td>乘</td>
+		</tr>
+		<tr>
+			<td>/</td>
+			<td>除</td>
+		</tr>
+		<tr>
+			<td>%</td>
+			<td>取余</td>
+		</tr>
+		<tr>
+			<td>++</td>
+			<td>自增</td>
+		</tr>
+		<tr>
+			<td>--</td>
+			<td>自减</td>
+		</tr>
+	</tbody>
+</table>
+
+- 一元运算符是指那些只处理一个操作的运算符。如“++，--”
+- 二元运算符是指处理两个操作的运算符。	如“+、-、*、/、%”
+
 
 ## 类型转换
-- 自动类型转换按从小到大顺序排列
 
+### 自动类型转换按从小到大顺序排列
 > `short` > `int` > `long` > `float` > `double`
 
-- 强制类型转换
-
+### 强制类型转换
 ```c
 int c=(int)a/b;
 ```
