@@ -39,11 +39,15 @@ int main(){
 ## 程序说明
 - return 关键词表示返回结果。
 
-## 关于stdio.h头文件的标准函数
-- int getchar()//从标准输入设备读入一个字符
-- int putchar()//向标准输出设备写出一个字符
-- int scanf(char*format[,argument…])//从标准输入设备读入格式化后的数据
-- int printf(char*format[,argument…])//向标准输出设备输出格式化字符串
-- char gets(char*string)//从标准输入设备读入一个字符串
-- int puts(char*string)//向标准输出设备输出一个字符串
-- int sprintf(char*string,char*format[,…])//把格式化的数据写入某个字符串缓冲区
+## 关于stdio.h头文件的函数
+```c
+int getchar()//从标准输入设备读入一个字符
+int putchar()//向标准输出设备写出一个字符
+int scanf(char*format[,argument…])//从标准输入设备读入格式化后的数据
+int printf(char*format[,argument…])//向标准输出设备输出格式化字符串
+char gets(char*string)//从标准输入设备读入一个字符串
+int puts(char*string)//向标准输出设备输出一个字符串
+int sprintf(char*string,char*format[,…])//把格式化的数据写入某个字符串缓冲区
+int fflush(FILE *stream) //清除读写缓冲区，需要立即把输出缓冲区的数据进行物理写入时
+void rewind(FILE *stream) //将文件内部的位置指针重新指向一个流（数据流/文件）的开头
+```
