@@ -8,168 +8,109 @@ keywords: ubuntu, apache,nginx,mysql,php
 
 Content here
 
+## 添加源
+
+```shell
+sudo apt-get install -y language-pack-en-base
+sudo LC_ALL=en_US.UTF-8 add-apt-repository ppa:ondrej/php
+sudo add-apt-repository ppa:ondrej/php
+```
+## 更新源
+
+```shell
+sudo apt-get update
+```
+
 ## 安装Apache
 
 ```shell
-yum install -y httpd
+sudo apt-get install -y apache2
 ```
 
-### 安装Apache扩展
+### 修改Apache端口
 
 ```shell
-yum install -y httpd-manual mod_ssl mod_perl mod_auth_mysql
+vim /etc/apache2/vim ports.conf
+
+//修改 Listen 80 为 Listen 8080
+Listen 8080
 ```
 
-### 设置Apache端口
+### 重启Apache
 
 ```shell
-vi /etc/httpd/conf/httpd.conf
-```
-
-修改`Listen 80`为`Listen 8080`
-
-### 启动Apache
-
-```shell
-service httpd start
-```
-
-### 设置开机自动启动
-```shell
-chkconfig httpd on
+service apache2 restart
 ```
 
 ## 安装Nginx
-### 设置Nginx安装源
-
-> 编辑/etc/yum.repos.d/nginx.repo文件，然后把下面文件脚本添加
-
-```
-[nginx]
-name=nginx repo
-baseurl=http://nginx.org/packages/centos/$releasever/$basearch/
-gpgcheck=0
-enabled=1
-```
-
-### 安装Nginx
 
 ```shell
-yum install -y nginx
-```
-
-## 设置开机自动启动
-
-```shell
-chkconfig nginx on
-```
-
-## 启动Nginx
-
-```shell
-service nginx start
+sudo apt-get install -y nginx
 ```
 
 ## 安装Mysql
 
 ```shell
-yum install -y mysql mysql-server mysql-devel
-```
-
-### 启动Mysql
-
-```shell
-service mysqld start
-```
-
-### 设置开机自动启动
-
-```shell
-chkconfig mysqld on
+sudo apt-get install -y mysql-server mysql-client
 ```
 
 ## 安装PHP
 
 ```shell
-yum install -y php php-mysql
+sudo apt-get install -y php5.6
 ```
 
-### 安装PHP扩展
+## 安装PHP扩展
 
 ```shell
-yum install -y php-mysql gd php-gd gd-devel php-xml php-common php-mbstring php-ldap php-pear php-xmlrpc php-imap
+sudo apt-get install -y php5.6-mysql php5.6-curl php5.6-gd php5.6-imagick php5.6-mcrypt php5.6-memcache php5.6-xmlrpc php5.6-xsl
 ```
 
-### 安装php-fpm
+## 安装php-fpm
 
 ```shell
-yum install -y php-fpm
-```
-
-### 设置开机自动启动
-
-```shell
-chkconfig php-fpm on 
-```
-
-### 启动php-fpm
-
-```shell
-service php-fpm start
+sudo apt-get install -y php5.6-fpm
 ```
 
 ### 配置Nginx的PHP环境
 
 ```shell
-vim /etc/nginx/conf.d/default.conf 
+vim /etc/nginx/sites-enabled/default
 ```
 
 ```
 //添加nginx 默认主页index.php 
 
-location / {
-	root   /usr/share/nginx/html;
+server{
+	root   /var/www/html;
 	index  index.html index.htm index.php;
-}
 
-//配置nginx支持php
-location ~ .php$ {
-	root	html;
-	fastcgi_pass	127.0.0.1:9000;
-	fastcgi_index	index.php;
-	fastcgi_params  SCRIPT_FILENAME  /scripts$fastcgi_script_name;
-	include	fastcgi_params;
+	//配置nginx支持php
+	location ~ .php$ {
+		try_files $uri =404;
+		fastcgi_pass	127.0.0.1:9000;
+		fastcgi_index	index.php;
+		include	fastcgi_params;
+	}
 }
+```
+
+### 重启Nginx
+
+```shell
+/etc/init.d/nginx restart
 ```
 
 ### 配置php-fpm
 
 ```shell
-vim /etc/php-fpm.d/www.conf
-//修改 user = apache 和 group = apache 为
-user = nginx
-group = nginx
+vim /etc/php/5.6/fpm/pool.d/www.conf
+//把 listen = /var/run/php5-fpm.sock  改为
+listen = 127.0.0.1:9000
 ```
 
-
-## 开放Centos的端口
-
-```shell
-/sbin/iptables -I INPUT -p tcp --dport 80 -j ACCEPT
-```
+### 重启php-fpm
 
 ```shell
-/sbin/iptables -I INPUT -p tcp --dport 8080 -j ACCEPT
-```
-
-```shell
-/sbin/iptables -I INPUT -p tcp --dport 3306 -j ACCEPT
-```
-
-```shell
-/etc/rc.d/init.d/iptables save
-```
-
-```shell
-/etc/rc.d/init.d/iptables status
+/etc/init.d/php5.6-fpm restart
 ```

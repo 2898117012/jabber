@@ -128,7 +128,7 @@ vim /etc/nginx/conf.d/default.conf
 //添加nginx 默认主页index.php 
 
 location / {
-	root   /usr/share/nginx/html;
+	root   /var/www/html;
 	index  index.html index.htm index.php;
 }
 
@@ -151,6 +151,11 @@ user = nginx
 group = nginx
 ```
 
+### 重启php-fpm
+
+```shell
+service php-fpm restart
+```
 
 ## 开放Centos的端口
 
