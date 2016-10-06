@@ -51,3 +51,5 @@ int sprintf(char*string,char*format[,…])//把格式化的数据写入某个字
 int fflush(FILE *stream) //清除读写缓冲区，需要立即把输出缓冲区的数据进行物理写入时
 void rewind(FILE *stream) //将文件内部的位置指针重新指向一个流（数据流/文件）的开头
 ```
+
+- [示例代码](https://github.com/2898117012/c-lang-demo/tree/master/hello-world){:target="_blank"}
