@@ -53,3 +53,5 @@ void rewind(FILE *stream) //将文件内部的位置指针重新指向一个流�
 ```
 
 - [示例代码](https://github.com/2898117012/c-lang-demo/tree/master/hello-world){:target="_blank"}
+
+> 欢迎大家加入`一起学C语言QQ群：474879609`

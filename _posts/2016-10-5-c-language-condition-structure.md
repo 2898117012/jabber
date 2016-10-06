@@ -137,3 +137,5 @@ int main(void) {
 ```
 
 - [示例代码](https://github.com/2898117012/c-lang-demo/tree/master/switch){:target="_blank"}
+
+> 欢迎大家加入`一起学C语言QQ群：474879609`

@@ -103,3 +103,5 @@ int main(void) {
 > 只能用在循环里，作用是跳过循环体中剩余的语句而准备执行下一次循环。
 
 - [示例代码](https://github.com/2898117012/c-lang-demo/tree/master/while){:target="_blank"}
+
+> 欢迎大家加入`一起学C语言QQ群：474879609`
