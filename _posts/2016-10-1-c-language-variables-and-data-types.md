@@ -86,7 +86,7 @@ double myMoney = 1000;
 #define PI 3.1415926
 int main(void) {
     #define AGE 20
-    printf("PI:%f\n",PI);
+    printf("PI:%f\n",PI); //如果使用%0.2f，将会输出小数点后2位
     printf("AGE:%d\n",AGE);
     return 0;
 }
