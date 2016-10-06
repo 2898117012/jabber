@@ -4,9 +4,9 @@
 baseurl:
 url: http://jabber.oppophp.com
 date_format: "ordinal"
-title: Jabber
+title: Jabber学习笔记
 subtitle: "全汝形，抱汝生，勿使汝思虑营营！"
-description: "Jabber的个人博客"
+description: "Jabber的个人博客学习笔记"
 keywords: php,laravel,thinkphp,vagrant,jabber,c,java,docker,nodejs,python,ruby,golang,lua,webpack,gulp,grunt,reactjs,vuejs,angularjs,jquery
 favicon: /favicon.ico
 timezone: Asia/Shanghai
