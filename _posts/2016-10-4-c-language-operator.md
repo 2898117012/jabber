@@ -166,3 +166,85 @@ expr1 ? expr2 : pxpr3;
 - 二元运算符是指处理两个操作的运算符。	如`+`、`-`、`*`、`/`、`%`
 
 > 变量和（或）常量与符号的组合称为表达式
+
+## 位运算符
+
+<table>
+	<thead>
+		<tr>
+			<th>运算符</th>
+			<th>说明</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>&</td>
+			<td>按位`与`运算符</td>
+		</tr>
+		<tr>
+			<td>|</td>
+			<td>按位`或`运算符</td>
+		</tr>
+		<tr>
+			<td>^</td>
+			<td>按位`异或(EOR)`运算符</td>
+		</tr>
+		<tr>
+			<td>~</td>
+			<td>按位`非`运算符,也称为1的补位运算符</td>
+		</tr>
+		<tr>
+			<td><<</td>
+			<td>按位`左移`运算符</td>
+		</tr>
+		<tr>
+			<td>>></td>
+			<td>按位`右移`运算符</td>
+		</tr>
+	</tbody>
+</table>
+
+### 示例
+
+```c
+#include <stdio.h>
+void reverse(char *s,int len){
+    int i;
+    for(i= 0;i<len/2;i++){
+        char ch = s[i];
+        s[i] = s[len-i-1];
+        s[len-i-1] = ch;
+    }
+}
+void dec2bin(int n,char *s){
+    int i = 0;
+    do{
+        s[i++] = n % 2 ? '1' : '0' ;
+        n /= 2;
+    }while(n);
+    s[i] = 0;
+    reverse(s,i);
+}
+int main(void) {
+    int x = 100;
+    int y = 6;
+    int z = x & y;
+    char x_str[25];
+    char y_str[25];
+    char z_str[25];
+    dec2bin(x,x_str);
+    printf("x 二进制值为：%s\n",x_str);
+    dec2bin(y,y_str);
+    printf("y 二进制值为：%s\n",y_str);
+    dec2bin(z,z_str);
+    printf("z 二进制值为：%s\n",z_str);
+    return 0;
+}
+/***
+ * x 二进制值为：1100100
+ * y 二进制值为：0000110
+ * z 二进制值为：0000100
+ ***/
+```
+
+- [示例代码](https://github.com/2898117012/c-lang-demo/tree/master/operator){:target="_blank"}
