@@ -1,6 +1,6 @@
 ---
 layout: page
-title: About
+title: 关于
 description: 全汝形，抱汝生，勿使汝思虑营营！
 keywords: php,laravel,thinkphp,vagrant, jabber
 comments: false
