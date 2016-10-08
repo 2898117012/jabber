@@ -24,3 +24,5 @@ char *name[]={"Apple","Pear","Banana","peach"};
 就相当于
 name[0]指向"Apple";
 name[1]指向"Pear";
+
+sscanf
