@@ -14,4 +14,5 @@ permalink: /links/
 * [无锡seo](http://www.iseo365.com/){:target="_blank"}
 * [悦无限](http://www.yuewux.com/){:target="_blank"}
 * [A5源码](http://down.admin5.com/){:target="_blank"}
+* [好厉害](http://hlhwang.com/){:target="_blank"}
  
