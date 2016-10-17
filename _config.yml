@@ -31,6 +31,14 @@ navs:
     label: 首页
 
   -
+    href: /themes/
+    label: 主题
+
+  -
+    href: /projects/
+    label: 开源
+
+  -
     href: /categories/
     label: 分类
 
