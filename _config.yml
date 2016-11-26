@@ -30,13 +30,13 @@ navs:
     href: /
     label: 首页
 
-  -
-    href: /themes/
-    label: 主题
+#  -
+#    href: /themes/
+#    label: 主题
 
-  -
-    href: /projects/
-    label: 项目
+#  -
+#    href: /projects/
+#    label: 项目
 
   -
     href: /categories/
